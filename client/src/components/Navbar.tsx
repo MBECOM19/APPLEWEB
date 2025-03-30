@@ -46,7 +46,7 @@ const Navbar = () => {
             </svg>
           </a>
           <div className="hidden md:flex ml-10 space-x-6">
-            {['home', 'iphones', 'macbooks', 'airpods', 'ipads', 'downloads', 'kontakt'].map((item) => (
+            {['home', 'iphones', 'macbooks', 'airpods', 'ipads', 'compare', 'kontakt'].map((item) => (
               <a 
                 key={item}
                 href={`#${item}`} 
@@ -58,7 +58,7 @@ const Navbar = () => {
                  item === 'macbooks' ? 'MacBooks' : 
                  item === 'airpods' ? 'AirPods' : 
                  item === 'ipads' ? 'iPads' : 
-                 item === 'downloads' ? 'Datenblätter' : 'Kontakt'}
+                 item === 'compare' ? 'Vergleichen' : 'Kontakt'}
               </a>
             ))}
           </div>
@@ -80,7 +80,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div id="mobileMenu" className={`px-6 py-4 bg-white dark:bg-black shadow-lg md:hidden ${mobileMenuOpen ? '' : 'hidden'}`}>
         <div className="flex flex-col space-y-4">
-          {['home', 'iphones', 'macbooks', 'airpods', 'ipads', 'downloads', 'kontakt'].map((item) => (
+          {['home', 'iphones', 'macbooks', 'airpods', 'ipads', 'compare', 'kontakt'].map((item) => (
             <a 
               key={item}
               href={`#${item}`} 
@@ -92,7 +92,7 @@ const Navbar = () => {
                item === 'macbooks' ? 'MacBooks' : 
                item === 'airpods' ? 'AirPods' : 
                item === 'ipads' ? 'iPads' : 
-               item === 'downloads' ? 'Datenblätter' : 'Kontakt'}
+               item === 'compare' ? 'Vergleichen' : 'Kontakt'}
             </a>
           ))}
         </div>

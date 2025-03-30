@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useLocation } from 'wouter';
 import { products } from '@/data/products';
 
 const ProductsSection = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string, alt: string } | null>(null);
+  const [, setLocation] = useLocation();
 
   // Open lightbox with selected image
   const openLightbox = (fullImgSrc: string, altText: string) => {
@@ -12,6 +14,13 @@ const ProductsSection = () => {
       detail: { src: fullImgSrc, alt: altText } 
     });
     window.dispatchEvent(lightboxEvent);
+  };
+  
+  // Navigate to product detail page
+  const goToProductDetail = (product: any) => {
+    // Store product data in localStorage for retrieval on product page
+    localStorage.setItem("selectedProduct", JSON.stringify(product));
+    setLocation("/produkt");
   };
 
   return (
@@ -42,7 +51,12 @@ const ProductsSection = () => {
                   <h4 className="text-xl font-medium mb-2">{iphone.name}</h4>
                   <p className="text-apple-gray dark:text-gray-400 mb-4">{iphone.description}</p>
                   <p className="font-medium mb-4">Ab €{iphone.price}</p>
-                  <button className="text-apple-blue hover:underline font-medium">Mehr erfahren</button>
+                  <button 
+                    className="text-apple-blue hover:underline font-medium"
+                    onClick={() => goToProductDetail(iphone)}
+                  >
+                    Mehr erfahren
+                  </button>
                 </div>
               </div>
             ))}
@@ -72,7 +86,12 @@ const ProductsSection = () => {
                   <h4 className="text-xl font-medium mb-2">{macbook.name}</h4>
                   <p className="text-apple-gray dark:text-gray-400 mb-4">{macbook.description}</p>
                   <p className="font-medium mb-4">Ab €{macbook.price}</p>
-                  <button className="text-apple-blue hover:underline font-medium">Mehr erfahren</button>
+                  <button 
+                    className="text-apple-blue hover:underline font-medium"
+                    onClick={() => goToProductDetail(macbook)}
+                  >
+                    Mehr erfahren
+                  </button>
                 </div>
               </div>
             ))}
@@ -102,7 +121,12 @@ const ProductsSection = () => {
                   <h4 className="text-xl font-medium mb-2">{airpod.name}</h4>
                   <p className="text-apple-gray dark:text-gray-400 mb-4">{airpod.description}</p>
                   <p className="font-medium mb-4">€{airpod.price}</p>
-                  <button className="text-apple-blue hover:underline font-medium">Mehr erfahren</button>
+                  <button 
+                    className="text-apple-blue hover:underline font-medium"
+                    onClick={() => goToProductDetail(airpod)}
+                  >
+                    Mehr erfahren
+                  </button>
                 </div>
               </div>
             ))}
@@ -132,7 +156,12 @@ const ProductsSection = () => {
                   <h4 className="text-xl font-medium mb-2">{ipad.name}</h4>
                   <p className="text-apple-gray dark:text-gray-400 mb-4">{ipad.description}</p>
                   <p className="font-medium mb-4">Ab €{ipad.price}</p>
-                  <button className="text-apple-blue hover:underline font-medium">Mehr erfahren</button>
+                  <button 
+                    className="text-apple-blue hover:underline font-medium"
+                    onClick={() => goToProductDetail(ipad)}
+                  >
+                    Mehr erfahren
+                  </button>
                 </div>
               </div>
             ))}
