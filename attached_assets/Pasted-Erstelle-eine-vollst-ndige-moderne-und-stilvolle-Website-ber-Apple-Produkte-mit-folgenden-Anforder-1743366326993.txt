@@ -1,0 +1,62 @@
+Erstelle eine vollständige, moderne und stilvolle Website über Apple-Produkte mit folgenden Anforderungen:
+
+1️⃣ Allgemeine Anforderungen:
+
+Die Website soll professionell und hochwertig aussehen, ähnlich wie die offizielle Apple-Website.
+
+Sie soll responsiv sein, also auf Desktop, Tablet und Mobile perfekt funktionieren.
+
+Verwende eine klare, minimalistische Farbpalette mit viel Weißraum und sanften Schatten.
+
+Integriere hochwertige Bilder (z. B. von Unsplash oder direkt von Apple).
+
+2️⃣ Struktur der Website:
+Header & Navbar:
+
+Oben eine elegante Navigationsleiste mit folgenden Links: Home, iPhones, MacBooks, AirPods, iPads, Kontakt.
+
+Beim Scrollen soll die Navbar eine leichte Transparenz mit Blur-Effekt haben.
+
+Das Apple-Logo soll beim Hover leicht animiert sein.
+
+Hero Section (Startbereich):
+
+Ein großes, hochwertiges Bild eines aktuellen Apple-Produkts mit einem sanften Fade-in Effekt.
+
+Darunter ein animierter Button „Mehr erfahren“, der sich leicht hebt, wenn man mit der Maus darüber fährt.
+
+Produktübersicht (Grid-Layout):
+
+Eine schöne animierte Produktübersicht, bei der die Apple-Produkte (iPhones, MacBooks, AirPods, iPads) in einem modernen Grid-Layout dargestellt werden.
+
+Beim Hover sollen die Karten leicht zoomen und ein sanfter Schatten erscheinen.
+
+Dynamischer Effekt beim Scrollen:
+
+Die Bilder und Texte sollen mit sanften Fade-in/Slide-in-Effekten erscheinen, wenn man nach unten scrollt.
+
+Nutze dazu GSAP oder AOS (Animate on Scroll Library).
+
+Footer:
+
+Ein hochwertiger Footer mit Links zu Datenschutz, Impressum und Social-Media-Icons.
+
+3️⃣ Technische Anforderungen:
+
+Nutze HTML, CSS und JavaScript.
+
+Verwende Flexbox oder Grid für eine saubere, responsive Gestaltung.
+
+Nutze CSS-Animationen oder GSAP für weiche Bewegungen.
+
+Integriere einen Dark Mode Switch, damit Nutzer zwischen Hell- und Dunkelmodus wechseln können.
+
+4️⃣ Extra-Funktionen für mehr Qualität:
+
+Ein Parallax-Scrolling-Effekt im Hero-Bereich.
+
+Ein kleines Kontaktformular, in das Nutzer ihren Namen und ihre Nachricht eingeben können.
+
+Eine einfache Lightbox-Galerie, in der Apple-Produktbilder in einer größeren Ansicht geöffnet werden können.
+
+Schreibe den vollständigen HTML, CSS und JavaScript Code für diese Website.
