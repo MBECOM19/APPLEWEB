@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProductsSection from "@/components/ProductsSection";
 import FeatureSection from "@/components/FeatureSection";
+import DownloadSection from "@/components/DownloadSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import Lightbox from "@/components/Lightbox";
@@ -20,6 +21,7 @@ const Home = () => {
       <HeroSection />
       <ProductsSection />
       <FeatureSection />
+      <DownloadSection />
       <ContactSection />
       <Footer />
       <Lightbox />

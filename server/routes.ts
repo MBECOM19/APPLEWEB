@@ -1,7 +1,8 @@
-import type { Express, Request, Response } from "express";
+import express, { type Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { z } from "zod";
+import path from "path";
 
 // Schema for contact form validation
 const contactSchema = z.object({
@@ -54,6 +55,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Get all contact messages (for admin purposes)
   app.get('/api/contact', (req: Request, res: Response) => {
     return res.status(200).json(contactMessages);
+  });
+  
+  // Serve static download files
+  app.use('/downloads', (req, res, next) => {
+    const filePath = path.join(process.cwd(), 'public', 'downloads', req.path);
+    res.sendFile(filePath, (err) => {
+      if (err) {
+        next();
+      }
+    });
   });
 
   const httpServer = createServer(app);
