@@ -19,9 +19,7 @@ Eine moderne, stilvolle Apple-Produkt-Website mit responsivem Design, Animations
 - Express.js Backend
 
 ## Hinweis für die Bewertung
-Dieses Projekt wurde in der Replit-Umgebung entwickelt und verwendet einige Replit-spezifische Plugins und Konfigurationen. Die beste Möglichkeit, das Projekt zu bewerten, ist über den Replit-Link:
-
-[Link zum Replit-Projekt](https://replit.com/@DEIN-USERNAME/DEIN-PROJEKT)
+Dieses Projekt wurde in der Replit-Umgebung entwickelt und verwendet einige Replit-spezifische Plugins und Konfigurationen. Hier der LINK: https://appleweb.onrender.com/
 
 ### Alternativ: Lokale Installation
 Für die lokale Installation in Visual Studio Code sind folgende Schritte erforderlich:
@@ -31,7 +29,7 @@ Für die lokale Installation in Visual Studio Code sind folgende Schritte erford
    - npm (wird mit Node.js installiert)
    - PostgreSQL Datenbank
 
-2. **Installation:**
+2. Installation:
    ```bash
    # Abhängigkeiten installieren
    npm install
@@ -47,8 +45,6 @@ Für die lokale Installation in Visual Studio Code sind folgende Schritte erford
    npm run dev
    ```
 
-3. **Anmerkung zu Replit-spezifischen Plugins:**
-   Falls beim lokalen Start Fehler mit Replit-Plugins auftreten, müssen diese aus der `vite.config.ts` entfernt und die entsprechenden Abhängigkeiten deaktiviert werden.
 
 ## Projektstruktur
 - `client/`: Frontend-Code (React)
@@ -56,7 +52,5 @@ Für die lokale Installation in Visual Studio Code sind folgende Schritte erford
 - `shared/`: Gemeinsame Dateien (z.B. Datenbankschema)
 - `attached_assets/`: Bilder und andere Assets
 
-## Über das Projekt
-Diese Website wurde als Schulprojekt entwickelt und zeigt moderne Apple-Produkte in einer benutzerfreundlichen, responsiven Oberfläche. Die Benutzer können zwischen verschiedenen Produktkategorien wechseln, Produkte vergleichen und detaillierte Informationen einsehen.
 
 Das Kontaktformular ist mit einer PostgreSQL-Datenbank verbunden und speichert die eingereichten Anfragen.
