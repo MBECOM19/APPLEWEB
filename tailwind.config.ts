@@ -61,6 +61,9 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        'apple-blue': '#0071e3',
+        'apple-darkgray': '#1d1d1f',
+        'apple-lightgray': '#f5f5f7',
       },
       keyframes: {
         "accordion-down": {

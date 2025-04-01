@@ -46,19 +46,20 @@ const Navbar = () => {
             </svg>
           </a>
           <div className="hidden md:flex ml-10 space-x-6">
-            {['home', 'iphones', 'macbooks', 'airpods', 'ipads', 'compare', 'kontakt'].map((item) => (
+            {['home', 'iphones', 'macbooks', 'airpods', 'ipads', 'compare', 'news', 'kontakt'].map((item) => (
               <a 
                 key={item}
-                href={`#${item}`} 
+                href={item === 'news' ? '/news' : `#${item}`}
                 className="text-sm hover:text-apple-blue transition-colors"
-                onClick={handleNavLinkClick}
+                onClick={item === 'news' ? undefined : handleNavLinkClick}
               >
                 {item === 'home' ? 'Home' : 
                  item === 'iphones' ? 'iPhones' : 
                  item === 'macbooks' ? 'MacBooks' : 
                  item === 'airpods' ? 'AirPods' : 
                  item === 'ipads' ? 'iPads' : 
-                 item === 'compare' ? 'Vergleichen' : 'Kontakt'}
+                 item === 'compare' ? 'Vergleichen' : 
+                 item === 'news' ? 'News' : 'Kontakt'}
               </a>
             ))}
           </div>
@@ -80,19 +81,20 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div id="mobileMenu" className={`px-6 py-4 bg-white dark:bg-black shadow-lg md:hidden ${mobileMenuOpen ? '' : 'hidden'}`}>
         <div className="flex flex-col space-y-4">
-          {['home', 'iphones', 'macbooks', 'airpods', 'ipads', 'compare', 'kontakt'].map((item) => (
+          {['home', 'iphones', 'macbooks', 'airpods', 'ipads', 'compare', 'news', 'kontakt'].map((item) => (
             <a 
               key={item}
-              href={`#${item}`} 
+              href={item === 'news' ? '/news' : `#${item}`}
               className="text-sm hover:text-apple-blue transition-colors"
-              onClick={handleNavLinkClick}
+              onClick={item === 'news' ? undefined : handleNavLinkClick}
             >
               {item === 'home' ? 'Home' : 
                item === 'iphones' ? 'iPhones' : 
                item === 'macbooks' ? 'MacBooks' : 
                item === 'airpods' ? 'AirPods' : 
                item === 'ipads' ? 'iPads' : 
-               item === 'compare' ? 'Vergleichen' : 'Kontakt'}
+               item === 'compare' ? 'Vergleichen' :
+               item === 'news' ? 'News' : 'Kontakt'}
             </a>
           ))}
         </div>

@@ -58,15 +58,15 @@ export const products: ProductCategories = {
       name: "AirPods Pro",
       description: "Aktives Noise Cancelling für immersiven Sound.",
       price: 279,
-      img: "https://images.unsplash.com/photo-1606741965429-8cc24f9a0550?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-      fullImg: "https://images.unsplash.com/photo-1606741965429-8cc24f9a0550?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+      img: "https://images.unsplash.com/photo-1603351154351-5e2d0600bb77?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      fullImg: "https://images.unsplash.com/photo-1603351154351-5e2d0600bb77?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
     },
     {
       name: "AirPods (3. Generation)",
       description: "Räumliches Audio mit dynamischem Head Tracking.",
       price: 199,
-      img: "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-      fullImg: "https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+      img: "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      fullImg: "https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
     }
   ],
   ipads: [
@@ -74,8 +74,8 @@ export const products: ProductCategories = {
       name: "iPad Pro",
       description: "Der ultimative iPad-Erlebnis mit M2 Chip.",
       price: 1049,
-      img: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-      fullImg: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+      img: "https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      fullImg: "https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
     },
     {
       name: "iPad Air",
@@ -88,8 +88,8 @@ export const products: ProductCategories = {
       name: "iPad",
       description: "Liebenswert. Zeichenfreudig. Unverzichtbar.",
       price: 429,
-      img: "https://images.unsplash.com/photo-1589739900243-4b52cd9b16ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-      fullImg: "https://images.unsplash.com/photo-1589739900243-4b52cd9b16ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+      img: "https://images.unsplash.com/photo-1585790050223-7d634c0bcb7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      fullImg: "https://images.unsplash.com/photo-1585790050223-7d634c0bcb7d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
     }
   ]
 };
